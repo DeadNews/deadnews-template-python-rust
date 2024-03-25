@@ -1,0 +1,14 @@
+{
+  "recommendations": [
+    // rust
+    "rust-lang.rust-analyzer",
+    "serayuzgur.crates",
+    // python
+    "charliermarsh.ruff",
+    "ms-pyright.pyright",
+    "ms-python.mypy-type-checker",
+    "ms-python.python",
+    // general
+    "tamasfe.even-better-toml"
+  ]
+}
