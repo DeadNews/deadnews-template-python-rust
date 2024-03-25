@@ -1,2 +1,3 @@
 # deadnews-template-rust-python
-Rust Python Project Template 
+
+> Rust Python Project Template

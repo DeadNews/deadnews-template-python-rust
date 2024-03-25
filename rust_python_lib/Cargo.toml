@@ -1,0 +1,8 @@
+[package]
+name = "rust_python_lib"
+crate-type = ["cdylib"]
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+cpython = "0.5"
