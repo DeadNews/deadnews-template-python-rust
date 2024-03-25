@@ -10,3 +10,7 @@ crate-type = ["cdylib"]
 
 [dependencies]
 pyo3 = { version = "0.20.3", features = ["extension-module"] }
+
+[profile.release]
+lto = true   # Enable Link Time Optimization.
+strip = true # Remove debug symbols and reduce binary size.

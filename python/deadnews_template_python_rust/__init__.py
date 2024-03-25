@@ -1,6 +1,3 @@
-from .deadnews_template_python_rust import *
+"""Public accessible objects of that module."""
 
-
-__doc__ = deadnews_template_python_rust.__doc__
-if hasattr(deadnews_template_python_rust, "__all__"):
-    __all__ = deadnews_template_python_rust.__all__
+from deadnews_template_python_rust.deadnews_template_python_rust import sum_as_string

@@ -1,4 +1,3 @@
-import pytest
 import deadnews_template_python_rust
 
 

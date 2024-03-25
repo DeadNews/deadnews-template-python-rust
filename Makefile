@@ -1,4 +1,4 @@
-.PHONY: all clean default build install checks pc test
+.PHONY: all clean default install lock update checks pc test docs run
 
 default: build
 
@@ -7,21 +7,30 @@ build:
 
 install:
 	pre-commit install
+	poetry install --sync
 
-checks: pc test
+lock:
+	poetry lock --no-update
+
+update:
+	poetry up --latest
+
+checks: pc install build lint test
 
 pc:
 	pre-commit run -a
 
+lint:
+	poetry run poe lint
+
 test:
+	poetry run poe test
+
+rs-test:
 	cargo test --all-features --workspace
 
-fmt:
+rs-fmt:
 	cargo fmt --all --check
 
-clippy:
+rs-clippy:
 	cargo clippy --all-targets --all-features --workspace -- -D warnings
-
-doc:
-	cargo doc --no-deps --document-private-items --all-features --workspace --examples
-
