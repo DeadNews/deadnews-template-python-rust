@@ -24,3 +24,6 @@ clippy:
 
 doc:
 	cargo doc --no-deps --document-private-items --all-features --workspace --examples
+
+notes:
+	poetry run maturin develop
