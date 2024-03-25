@@ -5,4 +5,4 @@ version = "0.1.0"
 edition = "2021"
 
 [dependencies]
-cpython = "0.5"
+pyo3 = { version = "0.20.3", features = ["extension-module"] }
