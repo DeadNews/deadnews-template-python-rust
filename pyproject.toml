@@ -5,7 +5,7 @@ build-backend = "maturin"
 [tool.poetry]
 name = "deadnews-template-python-rust"
 version = "0.1.0"
-description = ""
+description = "Rust Python Project Template"
 authors = ["DeadNews <aurczpbgr@mozmail.com>"]
 classifiers = [
     "Programming Language :: Rust",
