@@ -1,8 +1,12 @@
 [package]
-name = "rust_python_lib"
-crate-type = ["cdylib"]
+name = "deadnews-template-python-rust"
 version = "0.1.0"
 edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+[lib]
+name = "deadnews_template_python_rust"
+crate-type = ["cdylib"]
 
 [dependencies]
 pyo3 = { version = "0.20.3", features = ["extension-module"] }

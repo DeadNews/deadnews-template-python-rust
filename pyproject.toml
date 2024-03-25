@@ -1,5 +1,5 @@
 [build-system]
-requires = ["maturin"]
+requires = ["maturin>=1.5,<2.0"]
 build-backend = "maturin"
 
 [tool.poetry]
@@ -7,7 +7,11 @@ name = "deadnews-template-python-rust"
 version = "0.1.0"
 description = ""
 authors = ["DeadNews <aurczpbgr@mozmail.com>"]
-readme = "README.md"
+classifiers = [
+    "Programming Language :: Rust",
+    "Programming Language :: Python :: Implementation :: CPython",
+    "Programming Language :: Python :: Implementation :: PyPy",
+]
 
 [tool.poetry.dependencies]
 python = "^3.11"
@@ -15,5 +19,9 @@ python = "^3.11"
 [tool.poetry.group.dev.dependencies]
 maturin = "^1.5.1"
 
+[tool.poetry.group.test.dependencies]
+pytest = "^8.1.1"
+
 [tool.maturin]
 python-source = "python"
+features = ["pyo3/extension-module"]
