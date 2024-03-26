@@ -35,8 +35,9 @@ pytest-cov = "^5.0.0"
 maturin = "^1.5.1"
 
 [tool.maturin]
-python-source = "python"
 features = ["pyo3/extension-module"]
+python-source = "python"
+strip = true
 
 [tool.poetry-dynamic-versioning]
 enable = true
