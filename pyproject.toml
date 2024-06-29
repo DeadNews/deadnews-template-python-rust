@@ -22,10 +22,10 @@ classifiers = [
 python = "^3.11"
 
 [tool.poetry.group.lint.dependencies]
-mypy = "^1.10.0"
-poethepoet = "^0.26.1"
-pyright = "^1.1.365"
-ruff = "^0.4.7"
+mypy = "^1.10.1"
+poethepoet = "^0.27.0"
+pyright = "^1.1.369"
+ruff = "^0.5.0"
 
 [tool.poetry.group.test.dependencies]
 pytest = "^8.2.2"
