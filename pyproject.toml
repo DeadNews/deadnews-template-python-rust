@@ -22,17 +22,17 @@ classifiers = [
 python = "^3.11"
 
 [tool.poetry.group.lint.dependencies]
-mypy = "^1.10.1"
+mypy = "^1.11.0"
 poethepoet = "^0.27.0"
-pyright = "^1.1.369"
-ruff = "^0.5.0"
+pyright = "^1.1.373"
+ruff = "^0.5.5"
 
 [tool.poetry.group.test.dependencies]
-pytest = "^8.2.2"
+pytest = "^8.3.2"
 pytest-cov = "^5.0.0"
 
 [tool.poetry.group.build.dependencies]
-maturin = "^1.6.0"
+maturin = "^1.7.0"
 
 [tool.maturin]
 features = ["pyo3/extension-module"]
